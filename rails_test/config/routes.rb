@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get "/rails", to: lambda { |e| [200, {}, ["OK"]] }
+  get "/rails", to: lambda { |env| [200, {}, ["OK"]] }
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
